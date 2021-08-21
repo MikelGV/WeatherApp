@@ -27,6 +27,7 @@ def weather():
         "temp": str(list_of_data['main']['temp']) + 'k',
         "pressure": str(list_of_data['main']['pressure']),
         "humidity": str(list_of_data['main']['humidity']),
+        "cityname": str(city),
     }
     print(data)
     return render_template("index.html", data=data)
